@@ -21,10 +21,9 @@ namespace WindowsFormsApp5
             timer1.Interval = 1;
             dt = DateTime.Now;
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
-            this.Text = ((uint)((DateTime.Now - dt).TotalMilliseconds)).ToString();
+            this.Text = ((uint)(DateTime.Now - dt).TotalMilliseconds).ToString();
         }
     }
 }
